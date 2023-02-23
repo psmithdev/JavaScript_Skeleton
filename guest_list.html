@@ -12,17 +12,14 @@
     <script>
       // prettier-ignore
       const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
-      const paragraph = document.querySelector("p");
+      const admitParagraph = document.querySelector("p:first-of-type");
+      const refusedParagraph = document.querySelector("p:last-of-type");
 
       for (let i = 0; i < people.length; i++) {
-        paragraph.textContent += people[i] + "";
-
-        if (people === "Phil") {
-          // concatenate array item to end of refused
-        } else if (people === "Lola") {
-          // concatenate array item to end of refused
+        if (people[i] === "Phil" || people[i] === "Lola") {
+          refusedParagraph.textContent += people[i] + ", ";
         } else {
-          // admitted paragraph
+          admitParagraph.textContent += people[i] + ", ";
         }
       }
     </script>
