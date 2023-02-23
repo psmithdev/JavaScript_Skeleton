@@ -7,16 +7,19 @@
     <title>Document</title>
   </head>
   <body>
+    <p>Admit:</p>
+    <p>Refused:</p>
     <script>
       // prettier-ignore
       const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+      const paragraph = document.querySelector("p");
 
-      for (const peopleLoop of people) {
-        console.log(peopleLoop);
+      for (let i = 0; i < people.length; i++) {
+        paragraph.textContent += people[i] + "";
 
-        if (peopleLoop === "Phil") {
+        if (people === "Phil") {
           // concatenate array item to end of refused
-        } else if (peopleLoop === "Lola") {
+        } else if (people === "Lola") {
           // concatenate array item to end of refused
         } else {
           // admitted paragraph
