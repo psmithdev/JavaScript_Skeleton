@@ -1,10 +1,10 @@
-let string = "hey";
+function repeatString(string, num) {
+  let emptyString = "";
 
-const repeatString = function () {
-  for (let i = 0; i < 3; i++) {
-    let num = (string += " ");
-    console.log(num);
+  for (let i = 0; i < num; i++) {
+    emptyString += string;
   }
-};
+  return emptyString;
+}
 
-console.log(repeatString());
+console.log(repeatString("hey", 2));
