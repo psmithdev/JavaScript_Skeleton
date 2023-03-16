@@ -1,7 +1,7 @@
 const numbers = [1, 2, 3, 4];
 
 function removeFromArray() {
-  let removed = numbers.splice(2, 1);
+  let removed = numbers.splice(2, 1); //remove 3
   return numbers;
 }
 
