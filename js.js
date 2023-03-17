@@ -1,8 +1,5 @@
-const numbers = [1, 2, 3, 4];
-
-function removeFromArray() {
-  let removed = numbers.splice(2, 1);
-  return numbers;
+function removeFromArray(array, number) {
+  return array.slice(0, number).concat(array.slice(number + 1));
 }
 
-console.log(removeFromArray());
+console.log(removeFromArray([1, 2, 3, 4], 3));
