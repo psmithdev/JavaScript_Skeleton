@@ -1,5 +1,6 @@
-function removeFromArray(array, number) {
-  return array.slice(0, number).concat(array.slice(number + 1));
+function removeArray(empty) {
+  let emptyArray = [];
+  return (emptyArray += empty);
 }
 
-console.log(removeFromArray([1, 2, 3, 4], 3));
+console.log(removeArray([1, 2, 3]));
