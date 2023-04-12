@@ -14,7 +14,6 @@ if (integerOne >= integerTwo) {
   // run code
 } else if (integerTwo <= integerTwo) {
   //run code
-}
-{
+} else {
   return (results = "ERROR");
 }
