@@ -1,15 +1,7 @@
-function removeArray(empty, ...removeItem) {
-  const index = empty.indexOf(removeItem);
-  if (index !== -1) {
-    empty.splice(index, 1);
+function sumAll(integerOne, integerTwo) {
+  for (let i = integerOne; i < integerTwo; i++) {
+    console.log(i);
   }
-  return empty;
 }
 
-console.log(removeArray([1, 2, 3, 4], 3));
-
-function removeFromArray(array, ...args) {
-  return array.filter((x) => !args.includes(x));
-}
-
-console.log(removeFromArray([1, 2, 3, 4], 2, "tacos"));
+sumAll(1, 9);
