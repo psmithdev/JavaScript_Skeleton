@@ -1,7 +1,9 @@
 function sumAll(integerOne, integerTwo) {
-  for (let i = integerOne; i < integerTwo; i++) {
-    console.log(i);
+  let result = 0;
+  for (let i = integerOne; i <= integerTwo; i++) {
+    result += i;
   }
+  return result;
 }
 
-sumAll(1, 9);
+console.log(sumAll(123, 1));
