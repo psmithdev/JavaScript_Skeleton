@@ -16,4 +16,4 @@ function sumAll(integerOne, integerTwo) {
   }
 }
 
-console.log(sumAll(-10, 4));
+console.log(sumAll(1, 4));
