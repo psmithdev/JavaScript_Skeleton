@@ -1,19 +1,19 @@
 function sumAll(integerOne, integerTwo) {
   let result = 0;
 
-  for (let i = integerOne; i <= integerTwo; i++) {
-    result += i;
+  if (integerOne > integerTwo && integerOne > 0) {
+    for (let i = integerOne; i >= integerTwo; i--) {
+      result += i;
+    }
+    return result;
+  } else if (integerOne < integerTwo && integerOne > 0) {
+    for (let i = integerOne; i <= integerTwo; i++) {
+      result += i;
+    }
+    return result;
+  } else {
+    return "ERROR";
   }
-
-  return result;
 }
 
-console.log(sumAll(123, 1));
-
-if (integerOne >= integerTwo) {
-  // run code
-} else if (integerTwo <= integerTwo) {
-  //run code
-} else {
-  return (results = "ERROR");
-}
+console.log(sumAll(-10, 4));
