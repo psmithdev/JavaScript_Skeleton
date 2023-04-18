@@ -1,11 +1,13 @@
-function leapYears(givenYear) {
-  if (givenYear % 4 == 0 && givenYear % 100 !== 0) {
-    return true;
-  } else if (givenYear % 400 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+function convertToCelsius(fahrenheit) {
+  const result = ((fahrenheit - 32) * 5) / 9;
+  const rounded = Math.round(result * 10) / 10;
+  return rounded;
 }
 
-console.log(leapYears(1600));
+console.log(convertToCelsius(100));
+
+function convertToFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+
+console.log(convertToFahrenheit(0));
