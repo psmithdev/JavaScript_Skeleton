@@ -1,12 +1,20 @@
 function sumAll(integerOne, integerTwo) {
   let result = 0;
 
-  if (integerOne > integerTwo && integerOne > 0) {
+  if (
+    integerOne > integerTwo &&
+    integerOne > 0 &&
+    typeof integerTwo == "number"
+  ) {
     for (let i = integerOne; i >= integerTwo; i--) {
       result += i;
     }
     return result;
-  } else if (integerOne < integerTwo && integerOne > 0) {
+  } else if (
+    integerOne < integerTwo &&
+    integerOne > 0 &&
+    typeof integerTwo == "number"
+  ) {
     for (let i = integerOne; i <= integerTwo; i++) {
       result += i;
     }
@@ -16,4 +24,4 @@ function sumAll(integerOne, integerTwo) {
   }
 }
 
-console.log(sumAll(1, 4));
+console.log(sumAll(10, "90"));
