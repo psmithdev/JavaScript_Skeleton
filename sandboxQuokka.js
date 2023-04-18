@@ -1,27 +1,11 @@
-function sumAll(integerOne, integerTwo) {
-  let result = 0;
-
-  if (
-    integerOne > integerTwo &&
-    integerOne > 0 &&
-    typeof integerTwo == "number"
-  ) {
-    for (let i = integerOne; i >= integerTwo; i--) {
-      result += i;
-    }
-    return result;
-  } else if (
-    integerOne < integerTwo &&
-    integerOne > 0 &&
-    typeof integerTwo == "number"
-  ) {
-    for (let i = integerOne; i <= integerTwo; i++) {
-      result += i;
-    }
-    return result;
+function leapYears(givenYear) {
+  if (givenYear % 4 == 0 && givenYear % 100 !== 0) {
+    return true;
+  } else if (givenYear % 400 == 0) {
+    return true;
   } else {
-    return "ERROR";
+    return false;
   }
 }
 
-console.log(sumAll(10, "90"));
+console.log(leapYears(1600));
