@@ -27,5 +27,23 @@ blackPinkStyle.cssText = "background-color: pink;border:1px solid black";
 const heading1 = document.createElement("h1");
 heading1.textContent = "I'm a div";
 
+const paragraph2 = document.createElement("p");
+paragraph2.textContent = "ME TOO!";
+
 container.appendChild(divblackpink);
 divblackpink.appendChild(heading1);
+divblackpink.appendChild(paragraph2);
+
+// events
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
